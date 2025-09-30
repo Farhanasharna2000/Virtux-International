@@ -2,7 +2,7 @@ import { Play } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
-const Hero = () => {
+const Hero:React.FC = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row justify-between items-center px-4 md:px-0">
       <div className="md:w-1/2">
@@ -29,10 +29,10 @@ const Hero = () => {
       <div className="md:w-1/2">
         <Image
           src="/hero.png"
-          width={600}
+          width={800}
           height={600}
           alt=""
-          className="md:w-[600px] w-full md:h-[600px] h-70"
+          className="md:w-[800px] w-full md:h-[600px] h-70 object-contain"
         />
       </div>
     </div>
