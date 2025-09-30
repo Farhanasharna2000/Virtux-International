@@ -1,0 +1,21 @@
+@keyframes heartbeatBorder {
+  0%, 100% {
+    box-shadow: 0 0 0px #208dc7;
+    border-color: #0d5c86;
+  }
+  40% {
+    box-shadow: 0 0 15px #208dc7, 0 0 30px rgba(32, 141, 199, 0.5);
+    border-color: #208dc7;
+    transform: scale(1.05);
+  }
+  60% {
+    box-shadow: 0 0 10px #208dc7, 0 0 20px rgba(32, 141, 199, 0.3);
+    transform: scale(1);
+  }
+}
+
+.heartbeatBorder {
+  animation: heartbeatBorder 1.8s ease-in-out infinite;
+}
+
+
