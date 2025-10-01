@@ -1,5 +1,5 @@
 import React from "react";
-import { Globe, Headphones, Gamepad2, Award } from "lucide-react";
+import Image from "next/image";
 
 const About: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const About: React.FC = () => {
           {/* Heading */}
           <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
             Trusted By Worldwide <br /> Clients Since{" "}
-            <span className="text-[#1fa9f0]">1980</span>
+            <span className="text-[#208dc7]">1980</span>
           </h2>
 
           {/* Description */}
@@ -26,8 +26,13 @@ const About: React.FC = () => {
           <div className="grid grid-cols-2 gap-8 mb-10">
             {/* Item 1 */}
             <div>
-              <div className="flex items-center gap-3 mb-2">
-                <Award className="w-8 h-8 text-[#1fa9f0]" />
+              <div className="flex items-center mb-2">
+                   <Image
+            src="/about/11.png"
+          width={50}
+          height={50}
+          alt=""
+          />
                 <h3 className="font-semibold text-lg">First On Field</h3>
               </div>
               <p className="text-gray-400 text-sm">
@@ -38,8 +43,13 @@ const About: React.FC = () => {
 
             {/* Item 2 */}
             <div>
-              <div className="flex items-center gap-3 mb-2">
-                <Gamepad2 className="w-8 h-8 text-[#1fa9f0]" />
+              <div className="flex items-center mb-2">
+                          <Image
+            src="/about/12.png"
+          width={50}
+          height={50}
+          alt=""
+          />
                 <h3 className="font-semibold text-lg">Easy To Reach</h3>
               </div>
               <p className="text-gray-400 text-sm">
@@ -51,7 +61,12 @@ const About: React.FC = () => {
             {/* Item 3 */}
             <div>
               <div className="flex items-center gap-3 mb-2">
-                <Globe className="w-8 h-8 text-[#1fa9f0]" />
+                           <Image
+            src="/about/13.png"
+          width={50}
+          height={50}
+          alt=""
+          />
                 <h3 className="font-semibold text-lg">Worldwide Services</h3>
               </div>
               <p className="text-gray-400 text-sm">
@@ -63,7 +78,12 @@ const About: React.FC = () => {
             {/* Item 4 */}
             <div>
               <div className="flex items-center gap-3 mb-2">
-                <Headphones className="w-8 h-8 text-[#1fa9f0]" />
+                     <Image
+            src="/about/14.png"
+          width={50}
+          height={50}
+          alt=""
+          />
                 <h3 className="font-semibold text-lg">24/7 Support</h3>
               </div>
               <p className="text-gray-400 text-sm">
@@ -74,16 +94,15 @@ const About: React.FC = () => {
           </div>
 
           {/* CTA Button */}
-          <button className="bg-[#1fa9f0] hover:bg-[#1382c4] text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition">
+          <button className="bg-[#208dc7] hover:bg-[#1382c4] text-white font-semibold px-6 py-3 rounded-tl-md  rounded-br-md rounded-tr-2xl rounded-bl-2xl shadow-lg transition">
             Get In Touch
           </button>
         </div>
 
         {/* Right Illustration */}
         <div className="flex justify-center">
-          {/* You can replace this with your own SVG/3D illustration */}
-          <img
-            src="/about.png"
+          <Image
+            src="/about/18.png"
           width={800}
           height={600}
           alt=""
