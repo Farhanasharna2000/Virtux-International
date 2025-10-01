@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
 
   return (
     <section className="py-12 md:py-30">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3  px-6 md:px-10">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 px-6 md:px-10 gap-6">
         {/* Left side */}
         <div className="flex flex-col items-center md:items-start">
           <div className="bg-[#208dc7] rounded-4xl flex flex-col items-center justify-center p-6">
@@ -45,24 +45,25 @@ const Contact: React.FC = () => {
               alt=""
               width={90}
               height={90}
-              className="object-contain bg-white py-1 px-8 rounded-lg "
+              className="object-contain bg-white py-1 px-8 rounded-lg"
             />
           </div>
         </div>
+
         {/* Illustration */}
-        <div className="mt-6">
+        <div className="flex justify-center md:justify-start mt-6 md:mt-0">
           <Image
             src="/contact/17.png"
-            alt=""
+            alt="Illustration"
             width={450}
             height={450}
             className="object-contain"
           />
         </div>
 
-        {/* Right side */}
+        {/* Right side - Form */}
         <div className="mt-16 md:mt-0">
-          <h2 className="text-3xl md:text-4xl font-bold leading-snug ">
+          <h2 className="text-3xl md:text-4xl font-bold leading-snug">
             <span className="text-[#208dc7]">Reach</span> & Get In Touch <br />
             with us!
           </h2>
@@ -74,46 +75,52 @@ const Contact: React.FC = () => {
             <input
               type="text"
               name="name"
-              placeholder="You Name*"
+              placeholder="Your Name*"
               value={formData.name}
               onChange={handleChange}
               className="p-3 rounded-md text-black bg-white"
+              required
             />
             <input
               type="email"
               name="email"
-              placeholder="You Email*"
+              placeholder="Your Email*"
               value={formData.email}
               onChange={handleChange}
               className="p-3 rounded-md text-black bg-white"
+              required
+              suppressHydrationWarning
             />
             <input
               type="text"
               name="number"
-              placeholder="You Number*"
+              placeholder="Your Number*"
               value={formData.number}
               onChange={handleChange}
               className="p-3 rounded-md text-black bg-white"
+              required
             />
             <input
               type="text"
               name="subject"
-              placeholder="You Subject*"
+              placeholder="Subject*"
               value={formData.subject}
               onChange={handleChange}
               className="p-3 rounded-md text-black bg-white"
+              required
             />
             <textarea
               name="message"
-              placeholder="Enter Message..........."
+              placeholder="Enter Message..."
               value={formData.message}
               onChange={handleChange}
               rows={4}
               className="p-3 rounded-md text-black bg-white md:col-span-2"
+              required
             />
             <button
               type="submit"
-              className="bg-[#208dc7] text-white py-3 rounded-md md:col-span-2"
+              className="bg-[#208dc7] text-white py-3 rounded-md md:col-span-2 hover:bg-[#1a6fa1] transition-colors"
             >
               Send Message
             </button>
@@ -123,4 +130,5 @@ const Contact: React.FC = () => {
     </section>
   );
 };
+
 export default Contact;
