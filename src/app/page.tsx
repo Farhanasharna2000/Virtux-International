@@ -3,6 +3,7 @@ import Hero from '../components/home/hero';
 import ProcessFlow from '@/components/home/process';
 import Service from '@/components/home/service';
 import About from '@/components/home/about';
+import Testimonial from '@/components/home/testimonial';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <ProcessFlow/>
       <Service/>
       <About/>
+      <Testimonial/>
     </div>
   );
 };

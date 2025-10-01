@@ -7,7 +7,6 @@ const About: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div>
-         
           {/* Heading */}
           <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
             Trusted By Worldwide <br /> Clients Since{" "}
@@ -27,12 +26,7 @@ const About: React.FC = () => {
             {/* Item 1 */}
             <div>
               <div className="flex items-center mb-2">
-                   <Image
-            src="/about/11.png"
-          width={50}
-          height={50}
-          alt=""
-          />
+                <Image src="/about/11.png" width={50} height={50} alt="" />
                 <h3 className="font-semibold text-lg">First On Field</h3>
               </div>
               <p className="text-gray-400 text-sm">
@@ -44,12 +38,7 @@ const About: React.FC = () => {
             {/* Item 2 */}
             <div>
               <div className="flex items-center mb-2">
-                          <Image
-            src="/about/12.png"
-          width={50}
-          height={50}
-          alt=""
-          />
+                <Image src="/about/12.png" width={50} height={50} alt="" />
                 <h3 className="font-semibold text-lg">Easy To Reach</h3>
               </div>
               <p className="text-gray-400 text-sm">
@@ -60,13 +49,8 @@ const About: React.FC = () => {
 
             {/* Item 3 */}
             <div>
-              <div className="flex items-center gap-3 mb-2">
-                           <Image
-            src="/about/13.png"
-          width={50}
-          height={50}
-          alt=""
-          />
+              <div className="flex items-center mb-2">
+                <Image src="/about/13.png" width={50} height={50} alt="" />
                 <h3 className="font-semibold text-lg">Worldwide Services</h3>
               </div>
               <p className="text-gray-400 text-sm">
@@ -77,13 +61,8 @@ const About: React.FC = () => {
 
             {/* Item 4 */}
             <div>
-              <div className="flex items-center gap-3 mb-2">
-                     <Image
-            src="/about/14.png"
-          width={50}
-          height={50}
-          alt=""
-          />
+              <div className="flex items-center mb-2">
+                <Image src="/about/14.png" width={50} height={50} alt="" />
                 <h3 className="font-semibold text-lg">24/7 Support</h3>
               </div>
               <p className="text-gray-400 text-sm">
@@ -103,9 +82,9 @@ const About: React.FC = () => {
         <div className="flex justify-center">
           <Image
             src="/about/18.png"
-          width={800}
-          height={600}
-          alt=""
+            width={800}
+            height={600}
+            alt=""
             className="max-w-full h-auto"
           />
         </div>
