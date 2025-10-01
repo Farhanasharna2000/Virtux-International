@@ -19,7 +19,7 @@ const Testimonial: React.FC = () => {
 
   return (
     <div className="pt-12 px-6 md:px-10">
-      <div className="container mx-auto grid md:grid-cols-2 gap-10 ">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 ">
         {/* Left Side */}
         <div>
           <h1 className="text-3xl md:text-5xl font-bold mb-6">

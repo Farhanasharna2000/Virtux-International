@@ -61,8 +61,8 @@ const Contact: React.FC = () => {
         </div>
 
         {/* Right side */}
-        <div>
-          <h2 className="text-3xl md:text-4xl font-bold leading-snug">
+        <div className="mt-16 md:mt-0">
+          <h2 className="text-3xl md:text-4xl font-bold leading-snug ">
             <span className="text-[#208dc7]">Reach</span> & Get In Touch <br />
             with us!
           </h2>
