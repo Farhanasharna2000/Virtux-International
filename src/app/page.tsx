@@ -4,6 +4,7 @@ import ProcessFlow from '@/components/home/process';
 import Service from '@/components/home/service';
 import About from '@/components/home/about';
 import Testimonial from '@/components/home/testimonial';
+import Contact from '@/components/home/contact';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Service/>
       <About/>
       <Testimonial/>
+      <Contact/>
     </div>
   );
 };
