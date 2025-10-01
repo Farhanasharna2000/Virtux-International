@@ -40,7 +40,7 @@ const Team = () => {
       </h1>
 
       <Slider {...settings}>
-        {teamMembers.slice(0, 3).map((member, index) => (
+        {teamMembers.map((member, index) => (
           <div key={index} >
             <div className="group relative rounded-3xl p-8 cursor-pointer transition-all duration-300 hover:scale-105">
               <div className="flex flex-col items-center justify-center text-center h-full space-y-2">
