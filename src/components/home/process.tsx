@@ -3,7 +3,7 @@ import React from "react";
 
 const ProcessFlow:React.FC  = () => {
   return (
-    <div className="pb-24">
+    <div id="caseStudy" className="pb-24">
       {/* header  */}
       <div className="text-center">
         <h1 className="text-3xl md:text-5xl font-bold ">

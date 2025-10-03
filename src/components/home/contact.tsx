@@ -24,11 +24,11 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section className="py-12 md:py-30">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 px-6 md:px-10 gap-6">
+    <section id="contact" className="py-12 md:py-30">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-[1fr_0.8fr_1.4fr] px-6 md:px-10 gap-6">
         {/* Left side */}
         <div className="flex flex-col items-center md:items-start">
-          <div className="bg-[#208dc7] rounded-4xl flex flex-col items-center justify-center p-6">
+          <div className="bg-[#208dc7] rounded-4xl flex flex-col items-center justify-center p-6 w-full h-[350px] md:h-[400px]">
             <Image
               src="/contact/15.png"
               alt=""
@@ -51,15 +51,16 @@ const Contact: React.FC = () => {
         </div>
 
         {/* Illustration */}
-        <div className="flex justify-center md:justify-start mt-6 md:mt-0">
-          <Image
-            src="/contact/17.png"
-            alt="Illustration"
-            width={450}
-            height={450}
-            className="object-contain"
-          />
-        </div>
+        <div className="flex justify-center md:justify-start mt-6 md:mt-0 relative">
+        <Image
+          src="/contact/17.png"
+          alt="Illustration"
+          width={1200}   // make bigger
+          height={1200}
+          className="object-contain absolute left-[-26%] top-[10%] scale-125 hidden md:block"
+        />
+      </div>
+
 
         {/* Right side - Form */}
         <div className="mt-16 md:mt-0">
