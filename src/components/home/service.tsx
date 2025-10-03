@@ -4,7 +4,7 @@ import React from "react";
 
 const Service: React.FC = () => {
   return (
-    <div className="py-6 md:py-8 flex items-center justify-center">
+    <div id="service" className="py-6 md:py-8 flex items-center justify-center">
       <div className="md:mx-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12">
           {services.map((service, index) => (

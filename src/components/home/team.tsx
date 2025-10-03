@@ -6,33 +6,33 @@ import React from "react";
 import Slider from "react-slick";
 
 const Team = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    pauseOnHover: true,
-    swipeToSlide: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  pauseOnHover: true,
+  swipeToSlide: true,
+  responsive: [
+    {
+      breakpoint: 1024, // screens <= 1024px
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
       },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
+    },
+    {
+      breakpoint: 768, // screens <= 768px
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
       },
-    ],
-  };
+    },
+  ],
+};
   return (
     <div className="px-6 md:px-10 py-10">
       <h1 className="text-3xl md:text-5xl font-bold md:leading-14 mb-10">
