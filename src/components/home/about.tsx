@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About: React.FC = () => {
   return (
-    <section className="text-white py-16 md:py-24">
+    <section id="about" className="text-white py-16 md:py-24">
       <div className="container mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div>
