@@ -4,16 +4,16 @@ export const steps: ProcessStep[] = [
     {
       id: '1',
       title: 'Research Project',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description: 'We study your goals, audience, and needs to build a strong foundation.',
     },
     {
       id: '2',
       title: 'Evaluate Plans',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description: 'We craft and refine smart strategies to ensure the best approach',
     },
     {
       id: '3',
       title: 'Best Result',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      description: 'We deliver impactful, high-quality solutions that drive success',
     },
 ]

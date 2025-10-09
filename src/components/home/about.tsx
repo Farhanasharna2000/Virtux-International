@@ -9,16 +9,12 @@ const About: React.FC = () => {
         <div>
           {/* Heading */}
           <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
-            Trusted By Worldwide <br /> Clients Since{" "}
-            <span className="text-[#208dc7]">1980</span>
+           Your Growth Partner in a  <br /> Digital World{" "}
           </h2>
 
           {/* Description */}
           <p className="text-gray-300 mb-10 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-            accumsan lacus vel facilisis.
+            We combine innovation, dedication, and technology to deliver top-tier IT and creative solutions worldwide. From startups to enterprises, our commitment to quality and reliability has earned the trust of clients across every industry.
           </p>
 
           {/* Features */}
@@ -30,8 +26,7 @@ const About: React.FC = () => {
                 <h3 className="font-semibold text-lg">First On Field</h3>
               </div>
               <p className="text-gray-400 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
+                We take the lead with innovative strategies and flawless execution, ensuring every project sets new standards in performance
               </p>
             </div>
 
@@ -42,8 +37,7 @@ const About: React.FC = () => {
                 <h3 className="font-semibold text-lg">Easy To Reach</h3>
               </div>
               <p className="text-gray-400 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
+                Our team is always one message away — ready to collaborate, communicate, and deliver support whenever you need
               </p>
             </div>
 
@@ -54,8 +48,7 @@ const About: React.FC = () => {
                 <h3 className="font-semibold text-lg">Worldwide Services</h3>
               </div>
               <p className="text-gray-400 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
+                From local startups to international brands, we provide global-level IT, design, and marketing solutions with a personal touch.
               </p>
             </div>
 
@@ -66,8 +59,7 @@ const About: React.FC = () => {
                 <h3 className="font-semibold text-lg">24/7 Support</h3>
               </div>
               <p className="text-gray-400 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
+                Your success never sleeps — and neither do we. Our dedicated support team works around the clock to keep your projects running smoothly.
               </p>
             </div>
           </div>

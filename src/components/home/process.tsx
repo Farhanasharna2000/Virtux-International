@@ -9,15 +9,11 @@ const ProcessFlow:React.FC  = () => {
         <h1 className="text-3xl md:text-5xl font-bold ">
           Process <span className="text-[#208dc7]">We Follow</span>{" "}
         </h1>
-        <p className="py-4 md:py-6 font-semibold md:w-8/12 mx-auto">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
-          magni sint doloribus consequatur facere animi, quasi aliquid
-          laboriosam sequi voluptatibus Lorem ipsum dolor sit, amet consectetur
-          adipisicing elit. Obcaecati magni sint doloribus consequatur facere
-          animi, quasi aliquid laboriosam sequi voluptatibus!{" "}
+        <p className="p-25 md:py-6 font-semibold md:w-8/12 mx-auto">
+          We start by understanding your goals, audience, and industry. Through detailed research and analysis, we uncover insights that guide every creative and technical decision!{" "}
         </p>
       </div>
-      <div className="relative">
+      <div className="relative mt-10">
         <svg
           className="absolute top-[40%] left-0 w-full h-40 z-0 md:block hidden"
           xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +46,7 @@ const ProcessFlow:React.FC  = () => {
                 <h2 className="font-bold text-xl md:text-5xl"> {step.id}</h2>
               </div>
               <div className="border-2 p-8 rounded-full w-64 h-64 flex flex-col items-center justify-center text-center bg-[#141d45]">
-                <h2 className="text-xl font-bold">{step.title}</h2>
+                <h2 className="text-xl font-bold mb-5">{step.title}</h2>
                 <p>{step.description}</p>
               </div>
             </div>
