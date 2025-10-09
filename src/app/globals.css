@@ -119,4 +119,8 @@
   }
 }
 
-
+/* @media (max-width: 768px) {
+  .team-slider .slick-list { overflow: hidden !important; }
+  .team-slider .slick-slide { width: 100% !important; }
+  .team-slider .slick-track { margin-left: 0 !important; margin-right: 0 !important; }
+} */

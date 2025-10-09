@@ -26,9 +26,7 @@ const Testimonial: React.FC = () => {
             What Our Clients Say
           </h1>
           <p className="text-gray-300 leading-relaxed max-w-md">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida. Risus
+            We’re proud to earn the trust of clients from around the world. Their success stories inspire us to keep delivering innovative, reliable, and high-quality solutions that make a real impact on their business growth.
           </p>
         </div>
 

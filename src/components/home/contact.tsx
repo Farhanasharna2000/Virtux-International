@@ -36,17 +36,20 @@ const Contact: React.FC = () => {
               height={60}
               className="object-contain bg-white p-1 rounded-full mb-2"
             />
-            <p className="text-lg font-bold text-black">+880 1234 490</p>
-            <p className="text-sm text-black mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <p className="text-lg font-bold text-black">+8801576-625632</p>
+            <p className="text-lg font-bold text-black m-3">info@virtuxinternational.com</p>
+            <p className="text-sm font-bold text-black mb-6">
+             Sahajalal Avenue, Sector #04, Uttara, Dhaka -1230
             </p>
-            <Image
+           <a href="https://api.whatsapp.com/send?phone=8801576625632" target="_blank" rel="noopener noreferrer">
+             <Image
               src="/contact/16.png"
               alt=""
               width={90}
               height={90}
               className="object-contain bg-white py-1 px-8 rounded-lg"
             />
+           </a>
           </div>
         </div>
 

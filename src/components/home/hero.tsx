@@ -12,11 +12,7 @@ const Hero: React.FC = () => {
           <span className="text-[#208dc7]">Solution</span>{" "}
         </h1>
         <p className="pt-4 md:pt-8 font-semibold">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
-          magni sint doloribus consequatur facere animi, quasi aliquid
-          laboriosam sequi voluptatibus Lorem ipsum dolor sit, amet consectetur
-          adipisicing elit. Obcaecati magni sint doloribus consequatur facere
-          animi, quasi aliquid laboriosam sequi voluptatibus!{" "}
+          Empowering brands with end-to-end digital services including web and app development, UI/UX design, graphics, motion, VFX, SEO, marketing, content writing, and cyber security. We deliver innovation, performance, and growth — all in one place..{" "}
         </p>
         <div className="flex items-center gap-3 mt-6 md:mt-10 mb-6 md:mb-0">
           <button className="text-[#208dc7] hover:text-white font-semibold border-[#208dc7] border-2 md:text-lg rounded-tl-md  rounded-br-md rounded-tr-2xl rounded-bl-2xl px-6 py-2 cursor-pointer">
