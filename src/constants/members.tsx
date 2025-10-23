@@ -2,24 +2,74 @@ import { TeamMember } from "@/types/members";
 
 export const teamMembers: TeamMember[] = [
     {
-      name: "Rafikul Islam Sohel",
-      role: "Chairman",
+      name: "Rafiqul Islam Sohel",
+      role: "Founder & Head Of IT",
       image: "/Pic/1.png"
     },
     {
       name: "Rafikul Islam (Rakib)",
-      role: "CEO",
+      role: "Founder & Head Of Business Development",
       image: "/Pic/2.png"
     },
     {
       name: "Mazharul Islam Sazid",
-      role: "Director",
+      role: "Fonder & Head Of Creactive Development",
       image: "/Pic/3.png"
     },
     {
       name: "Farhana Akter Sharna",
       role: "Frontend Developer",
       image: "/Pic/20.jpg"
+    },
+    {
+      name: "Kazi Sarid",
+      role: "SEO",
+      image: "/Pic/11.png"
+    },
+     {
+      name: "Abdulla Al Amin",
+      role: "SEO",
+      image: "/Pic/12.png"
+    },
+    {
+      name: "Sadia Khan",
+      role: "SEO",
+      image: "/Pic/19.png"
+    },
+{
+      name: "Labib Uddin Adil",
+      role: "Digital Marketer",
+      image: "/Pic/14.png"
+    },
+    {
+      name: "Md Zunayed Khan",
+      role: "Digital Marketing",
+      image: "/Pic/16.png"
+    },
+    {
+      name: "Arafat Hosen Mottakin",
+      role: "AI Expart Content Creator",
+      image: "/Pic/20.png"
+    },
+    {
+      name: "Subir Chakraborty",
+      role: "Facebook and Instagram Ads Specialist",
+      image: "/Pic/24.png"
+    },
+    {
+      name: "Abdullah Al Mamun",
+      role: "Printerest Ads, YouTube Ads and shopify Expert",
+      image: "/Pic/25.png"
+    },
+    {
+      name: "Md. Abdullah Al Amin",
+      role: "Digital Marketer & VA",
+      image: "/Pic/26.png"
+    },
+     {
+      name: "Monirul Islam",
+      role: "Video Editor",
+      image: "/Pic/21.png"
     },
     {
       name: "Nosiba Naim",
@@ -33,7 +83,7 @@ export const teamMembers: TeamMember[] = [
     },
     {
       name: "Md. Shazid Ahmed",
-      role: "Visualizer",
+      role: "Visualizer Designer",
       image: "/Pic/6.png"
     },
     {
@@ -42,7 +92,7 @@ export const teamMembers: TeamMember[] = [
       image: "/Pic/7.png"
     },
      {
-      name: "Midul Grafix",
+      name: "Midul Hasan",
       role: "Graphic Designer",
       image: "/Pic/8.png"
     }, 
@@ -56,44 +106,50 @@ export const teamMembers: TeamMember[] = [
       role: "Graphic Designer",
       image: "/Pic/10.png"
     }, 
-    {
-      name: "Kazi Sarid",
-      role: "SEO",
-      image: "/Pic/11.png"
-    },
-     {
-      name: "Midul Grafix",
-      role: "SEO",
-      image: "/Pic/12.png"
-    }, 
+    
     {
       name: "Injamul Hoque",
-      role: "Movie Poster Designer",
+      role: "Drama & Movie Poster Designer",
       image: "/Pic/13.png"
     },
-     {
-      name: "Labib Uddin Adil",
-      role: "Digital Marketer",
-      image: "/Pic/14.png"
-    },
+     
     {
-      name: "Kazi Sarid",
-      role: "SEO",
+      name: "Tanzid Shakil",
+      role: "Visual Designer",
       image: "/Pic/15.png"
     },
-     {
-      name: "Md Zunayed Khan",
-      role: "Digital Marketing",
-      image: "/Pic/16.png"
-    },
+     
     {
-      name: "Jahadul Islam",
+      name: "Jahidul Islam",
       role: "Video Editor",
       image: "/Pic/17.png"
     },
     {
-      name: "Sadia Karim",
-      role: "SEO",
+      name: "Mahin Islam Emon",
+      role: "Video Editor",
       image: "/Pic/18.png"
+    },
+    
+    
+    {
+      name: "Sheuly Kabir",
+      role: "Content Writter",
+      image: "/Pic/22.png"
+    },
+    {
+      name: "Maliha Shaikh",
+      role: "Graphic Designer",
+      image: "/Pic/23.png"
+    },
+    
+    {
+      name: "Md. Mozahid",
+      role: "Thumbnail Designer",
+      image: "/Pic/27.png"
+    },
+    {
+      name: "Montasir Rahman",
+      role: "Visual Designer",
+      image: "/Pic/29.png"
     },
   ];
