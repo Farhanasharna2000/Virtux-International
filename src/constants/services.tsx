@@ -30,7 +30,24 @@ export const services: Service[] = [
       title: "Digital Market Planning",
     },
     {
-      icon: "/services/market.png",
-      title: "Market Data Analysing",
+      icon: "/services/vfx.png",
+      title: "VFX",
+    },
+    {
+      icon: "/services/appdev.png",
+      title: "App Development",
+    },
+    {
+      icon: "/services/contentwriting.png",
+      title: "Content/ Script Writing",
+    },
+    {
+      icon: "/services/cyber.png",
+      title: "Cyber Security",
+    },
+    {
+      icon: "/services/branding.png",
+      title: "Company Branding",
     }
+    
   ];

@@ -28,12 +28,13 @@ const Team: React.FC = () => {
                   />
                 </div>
                 <div className="mt-16">
+                  <h3 className="text-[26px] font-bold leading-tight">
+                    {member.name}
+                  </h3>
                   <p className="text-[#208dc7] font-bold text-lg">
                     {member.role}
                   </p>
-                  <h3 className="text-xl font-bold leading-tight">
-                    {member.name}
-                  </h3>
+                  
                 </div>
               </div>
             </div>

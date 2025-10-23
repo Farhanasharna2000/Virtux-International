@@ -26,7 +26,7 @@ const Team: React.FC = () => {
     swipeToSlide: true,
     centerMode: false,
     variableWidth: false,
-   
+
   } as const;
 
   const settings2 = {
@@ -41,7 +41,7 @@ const Team: React.FC = () => {
     swipeToSlide: true,
     centerMode: false,
     variableWidth: false,
-   
+
   } as const;
 
   return (
@@ -52,66 +52,67 @@ const Team: React.FC = () => {
 
       <div className="md:block hidden">
         <Slider {...settings}>
-        {teamMembers.map((member, index) => (
-          <div key={index}>
-            {/* min-w-0 prevents the card from forcing wider slides on small screens */}
-            <div className="group relative rounded-3xl p-6 md:p-8 cursor-pointer transition-all duration-300 hover:scale-105 min-w-0">
-              <div className="flex flex-col items-center justify-center text-center h-full space-y-2">
-                {/* Smaller box on mobile so one slide fits neatly */}
-                <div className="bg-white w-40 h-40 md:w-[200px] md:h-[200px] overflow-hidden rotate-45 rounded-3xl border-2 border-[#208dc7] p-3 mx-auto">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    width={200}
-                    height={200}
-                    className="object-contain w-full h-full -rotate-45 md:scale-150"
-                  />
-                </div>
-                <div className="mt-8 md:mt-10">
-                  <p className="text-[#208dc7] font-bold text-base md:text-lg">
-                    {member.role}
-                  </p>
-                  <h3 className="text-lg md:text-xl font-bold leading-tight">
-                    {member.name}
-                  </h3>
+          {teamMembers.map((member, index) => (
+            <div key={index}>
+              {/* min-w-0 prevents the card from forcing wider slides on small screens */}
+              <div className="group relative rounded-3xl p-6 md:p-8 cursor-pointer transition-all duration-300 hover:scale-105 min-w-0">
+                <div className="flex flex-col items-center justify-center text-center h-full space-y-2">
+                  {/* Smaller box on mobile so one slide fits neatly */}
+                  <div className="bg-white w-40 h-40 md:w-[200px] md:h-[200px] overflow-hidden rotate-45 rounded-3xl border-2 border-[#208dc7] p-3 mx-auto">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={200}
+                      height={200}
+                      className="object-contain w-full h-full -rotate-45 md:scale-150"
+                    />
+                  </div>
+                  <div className="mt-8 md:mt-10">
+                    <h3 className="text-lg md:text-xl font-bold leading-tight">
+                      {member.name}
+                    </h3>
+                    <p className="text-[#208dc7] font-bold text-base md:text-lg">
+                      {member.role}
+                    </p>
+                    
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
       </div>
 
       <div className="md:hidden">
         <Slider {...settings2}>
-        {teamMembers.map((member, index) => (
-          <div key={index}>
-            {/* min-w-0 prevents the card from forcing wider slides on small screens */}
-            <div className="group relative rounded-3xl p-6 md:p-8 cursor-pointer transition-all duration-300 hover:scale-105 min-w-0">
-              <div className="flex flex-col items-center justify-center text-center h-full space-y-2">
-                {/* Smaller box on mobile so one slide fits neatly */}
-                <div className="bg-white w-40 h-40 md:w-[200px] md:h-[200px] overflow-hidden rotate-45 rounded-3xl border-2 border-[#208dc7] p-3 mx-auto">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    width={200}
-                    height={200}
-                    className="object-contain w-full h-full -rotate-45 md:scale-150"
-                  />
-                </div>
-                <div className="mt-8 md:mt-10">
-                  <p className="text-[#208dc7] font-bold text-base md:text-lg">
-                    {member.role}
-                  </p>
-                  <h3 className="text-lg md:text-xl font-bold leading-tight">
-                    {member.name}
-                  </h3>
+          {teamMembers.map((member, index) => (
+            <div key={index}>
+              {/* min-w-0 prevents the card from forcing wider slides on small screens */}
+              <div className="group relative rounded-3xl p-6 md:p-8 cursor-pointer transition-all duration-300 hover:scale-105 min-w-0">
+                <div className="flex flex-col items-center justify-center text-center h-full space-y-2">
+                  <div className="bg-white w-[240px] h-[240px] overflow-hidden rotate-45 rounded-3xl border-2 border-[#208dc7] p-3 mt-7">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={240}
+                      height={240}
+                      className="object-contain w-full h-full -rotate-45 scale-150"
+                    />
+                  </div>
+                  <div className="mt-16">
+                    <h3 className="text-xl font-bold leading-tight">
+                      {member.name}
+                    </h3>
+                    <p className="text-[#208dc7] font-bold text-lg">
+                      {member.role}
+                    </p>
+                    
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
       </div>
 
       <Link href="/our-team" className="flex items-center justify-center mt-6">
@@ -120,7 +121,7 @@ const Team: React.FC = () => {
         </button>
       </Link>
     </div>
-    
+
   );
 };
 
