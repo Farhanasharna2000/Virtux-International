@@ -94,7 +94,7 @@ const Service: React.FC = () => {
               </div>
 
               {/* Glow effect on hover */}
-              <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl bg-[#208dc7]/50 -z-10"></div>
+              <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm bg-[#208dc7]/50 -z-10"></div>
             </div>
           ))}
         </div>
