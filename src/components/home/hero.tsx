@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Particles */}
-      <div className={`absolute inset-0 pointer-events-none ${styles.particlesContainer}`}>
+      {/* <div className={`absolute inset-0 pointer-events-none ${styles.particlesContainer}`}>
         {[...Array(25)].map((_, i) => (
           <div key={i} className={styles.particle} style={{
             left: `${Math.random() * 100}%`,
@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
             animationDuration: `${8 + Math.random() * 12}s`
           }}></div>
         ))}
-      </div>
+      </div> */}
 
       {/* Glowing orbs */}
       <div className={`absolute inset-0 pointer-events-none ${styles.orbsContainer}`}>
