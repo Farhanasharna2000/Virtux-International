@@ -13,7 +13,7 @@ export const teamMembers: TeamMember[] = [
     },
     {
       name: "Mazharul Islam Sazid",
-      role: "Fonder & Head Of Creactive Development",
+      role: "Founder & Head Of Creactive Development",
       image: "/Pic/3.png"
     },
     {
@@ -48,7 +48,7 @@ export const teamMembers: TeamMember[] = [
     },
     {
       name: "Arafat Hosen Mottakin",
-      role: "AI Expart Content Creator",
+      role: "AI Expert Content Creator",
       image: "/Pic/20.png"
     },
     {
@@ -133,7 +133,7 @@ export const teamMembers: TeamMember[] = [
     
     {
       name: "Sheuly Kabir",
-      role: "Content Writter",
+      role: "Content Writer",
       image: "/Pic/22.png"
     },
     {
