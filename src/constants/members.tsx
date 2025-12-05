@@ -21,6 +21,11 @@ export const teamMembers: TeamMember[] = [
       role: "Frontend Developer",
       image: "/Pic/30.jpg"
     },
+     {
+      name: "Rifat Khan",
+      role: "Wordpress Expert",
+      image: "/Pic/31.png"
+    },
     {
       name: "Kazi Sarid",
       role: "SEO",
