@@ -1,9 +1,20 @@
+'use client';
 import { Play } from "lucide-react";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Hero.module.css";
 
 const Hero: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="flex flex-col-reverse md:flex-row justify-between items-center px-4 md:px-0 relative overflow-hidden">
       {/* Animated background elements */}
@@ -13,26 +24,18 @@ const Hero: React.FC = () => {
         <div className={styles.floatingCircle3}></div>
       </div>
 
-      {/* Particles */}
-      {/* <div className={`absolute inset-0 pointer-events-none ${styles.particlesContainer}`}>
-        {[...Array(25)].map((_, i) => (
-          <div key={i} className={styles.particle} style={{
-            left: `${Math.random() * 100}%`,
-            animationDelay: `${Math.random() * 8}s`,
-            animationDuration: `${8 + Math.random() * 12}s`
-          }}></div>
-        ))}
-      </div> */}
-
-      {/* Glowing orbs */}
       <div className={`absolute inset-0 pointer-events-none ${styles.orbsContainer}`}>
         {[...Array(8)].map((_, i) => (
-          <div key={i} className={styles.glowingOrb} style={{
-            left: `${10 + Math.random() * 80}%`,
-            top: `${10 + Math.random() * 80}%`,
-            animationDelay: `${Math.random() * 4}s`,
-            animationDuration: `${6 + Math.random() * 6}s`
-          }}></div>
+          <div
+            key={i}
+            className={styles.glowingOrb}
+            style={{
+              left: `${10 + Math.random() * 80}%`,
+              top: `${10 + Math.random() * 80}%`,
+              animationDelay: `${Math.random() * 4}s`,
+              animationDuration: `${6 + Math.random() * 6}s`,
+            }}
+          ></div>
         ))}
       </div>
 
@@ -49,13 +52,14 @@ const Hero: React.FC = () => {
             Start Now
           </button>
           <button
+            onClick={openModal}
             className={`bg-[#208dc7] rounded-full size-14 flex items-center justify-center border-4 border-[#0d5c86] ${styles.heartbeatBorder} ${styles.pulseGlow}`}
           >
             <Play className="size-6 text-white cursor-pointer" />
           </button>
         </div>
       </div>
-      
+
       <div className={`md:w-1/2 relative z-10 ${styles.imageFloat}`}>
         <Image
           src="/hero.png"
@@ -65,6 +69,65 @@ const Hero: React.FC = () => {
           className="md:w-[800px] w-full md:h-[600px] h-70 object-contain"
         />
       </div>
+
+      {/* Enhanced Modal for YouTube Video */}
+      {isModalOpen && (
+        <div 
+          className="fixed inset-0 z-50 flex justify-center items-center p-4"
+          onClick={closeModal}
+        >
+          {/* Animated backdrop with blur */}
+          <div className={`absolute inset-0 bg-black/70 backdrop-blur-sm ${styles.fadeIn}`}></div>
+          
+          {/* Modal container with scale animation */}
+          <div 
+            className={`relative w-full max-w-4xl ${styles.scaleIn}`}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Gradient glow effect */}
+            <div className={`absolute -inset-1 bg-gradient-to-r from-[#208dc7] via-purple-500 to-[#208dc7] rounded-2xl blur-xl opacity-75 ${styles.modalPulse}`}></div>
+            
+            {/* Main modal content */}
+            <div className="relative bg-gradient-to-br from-gray-900 to-black rounded-2xl shadow-2xl overflow-hidden border border-[#208dc7]/30">
+              
+              {/* Close button */}
+              <button 
+                onClick={closeModal} 
+                className={`absolute -top-4 -right-4 z-10 bg-gradient-to-br from-[#208dc7] to-[#0d5c86] text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition-all duration-300 group ${styles.closeButton}`}
+              >
+                <span className={`text-2xl font-bold ${styles.closeIcon}`}>×</span>
+              </button>
+
+              {/* Decorative corner accents */}
+              <div className="absolute top-0 left-0 w-20 h-20 border-t-4 border-l-4 border-[#208dc7] rounded-tl-2xl"></div>
+              <div className="absolute bottom-0 right-0 w-20 h-20 border-b-4 border-r-4 border-[#208dc7] rounded-br-2xl"></div>
+
+              {/* Video container */}
+              <div className="p-4 md:p-6">
+                <div className="relative rounded-xl overflow-hidden shadow-2xl" style={{ aspectRatio: '16/9' }}>
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/_XzrZvxADIA?autoplay=1&si=j-QYUch0IAlWxRdg"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                    className="absolute inset-0"
+                  ></iframe>
+                </div>
+                
+                {/* Title and description */}
+                <div className="mt-4 text-center">
+                  <h3 className="text-white text-lg md:text-xl font-semibold">Watch Our Story</h3>
+                  <p className="text-gray-400 text-sm mt-1">Discover how we transform ideas into reality</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
