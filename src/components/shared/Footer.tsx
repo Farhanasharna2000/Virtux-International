@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, ArrowRight, MessageCircle, X } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Youtube, ArrowRight, MessageCircle, X } from 'lucide-react';
 
 const Footer = () => {
   const [showWhatsAppChat, setShowWhatsAppChat] = useState(false);
@@ -52,16 +52,16 @@ const Footer = () => {
                 Providing innovative IT solutions and services to help businesses thrive in the digital age.
               </p>
               <div className="flex gap-3 pt-2">
-                <a href="#" className="bg-slate-700 hover:bg-[#208dc7] p-2 rounded-lg transition-all duration-300 hover:scale-110">
+                <a href="https://www.facebook.com/virtuxintl" className="bg-slate-700 hover:bg-[#208dc7] p-2 rounded-lg transition-all duration-300 hover:scale-110">
                   <Facebook className="size-5" />
                 </a>
-                <a href="#" className="bg-slate-700 hover:bg-[#208dc7] p-2 rounded-lg transition-all duration-300 hover:scale-110">
-                  <Twitter className="size-5" />
+                <a href="https://www.youtube.com/@VirtuxInternational" className="bg-slate-700 hover:bg-[#208dc7] p-2 rounded-lg transition-all duration-300 hover:scale-110">
+                  <Youtube className="size-5" />
                 </a>
                 <a href="#" className="bg-slate-700 hover:bg-[#208dc7] p-2 rounded-lg transition-all duration-300 hover:scale-110">
                   <Linkedin className="size-5" />
                 </a>
-                <a href="#" className="bg-slate-700 hover:bg-[#208dc7] p-2 rounded-lg transition-all duration-300 hover:scale-110">
+                <a href="https://www.instagram.com/virtuxintl" className="bg-slate-700 hover:bg-[#208dc7] p-2 rounded-lg transition-all duration-300 hover:scale-110">
                   <Instagram className="size-5" />
                 </a>
               </div>
